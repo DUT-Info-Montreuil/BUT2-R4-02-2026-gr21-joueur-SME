@@ -1,6 +1,6 @@
-package universite_paris8.iut.qdev.tp202x.gr21.commons.dtos;
+package universite_paris8.iut.qdev.tp2026.gr21.commons.dtos;
 
-import universite_paris8.iut.qdev.tp202x.gr21.commons.enums.Langue;
+import universite_paris8.iut.qdev.tp2026.gr21.commons.enums.Langue;
 
 import java.util.ArrayList;
 import java.util.Objects;
