@@ -2,8 +2,6 @@ package universite_paris8.iut.qdev.tp2026.gr21.commons.enums;
 
 public enum Langue {
 
-    // null car pas encore réflechi
-
     FRANCAIS("fr", "Francais", 1),
     ANGLAIS("en", "Anglais", 2),
     ALLEMAND("deu", "Allemand", 3),
