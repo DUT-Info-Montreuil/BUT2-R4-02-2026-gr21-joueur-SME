@@ -4,11 +4,11 @@ public enum Langue {
 
     // null car pas encore réflechi
 
-    FRANCAIS("fr", "Francais", 1),
-    ANGLAIS("en", "Anglais", 2),
-    ALLEMAND("deu", "Allemand", 3),
-    ESPAGNOL("es", "Espagnol", 4),
-    ITALIEN("ita", "Italien", 5);
+    FRANCAIS("fr", "Français", 1),
+    ANGLAIS("en", "English", 2),
+    ALLEMAND("de", "Deutsch", 3),
+    ESPAGNOL("es", "Español", 4),
+    ITALIEN("it", "Italiano", 5);
 
     private String libelleCourt;
     private String libelleLong;
