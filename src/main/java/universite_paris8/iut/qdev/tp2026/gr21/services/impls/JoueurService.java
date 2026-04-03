@@ -14,7 +14,7 @@ public class JoueurService implements IJoueurService {
     private final ArrayList<Joueur> joueurs = new ArrayList<>();
 
     @Override
-    public Joueur ajouterUnJoueur(String pseudo, String prenom, int anneeNaissance, Langue langue) throws UsernameTakenException, NonCompliantFirstNameException, InvalidBirthYearException, InvalidLanguageException {
+    public Joueur ajouterUnJoueur(String prenom, String pseudo, int anneeNaissance, Langue langue) throws UsernameTakenException, NonCompliantFirstNameException, InvalidBirthYearException, InvalidLanguageException {
         for (Joueur j : joueurs) {
             if (j.getPseudo().equalsIgnoreCase(pseudo)) {
                 System.out.println();
@@ -45,7 +45,9 @@ public class JoueurService implements IJoueurService {
             throw new InvalidLanguageException();
         }
 
-        return new Joueur(prenom, pseudo, anneeNaissance, langue);
+        Joueur joueur = new Joueur(prenom, pseudo, anneeNaissance, langue);
+        joueurs.add(joueur);
+        return joueur;
     }
 
     @Override
